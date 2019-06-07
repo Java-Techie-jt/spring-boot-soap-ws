@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.javatechie.com/spring/soap/api/loanEligibility"
+	xmlns:tns="http://www.javatechie.com/spring/soap/api/loanEligibility"
+	elementFormDefault="qualified">
+
+	<xsd:element name="CustomerRequest">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="customerName" type="xsd:string" />
+				<xsd:element name="age" type="xsd:int" />
+				<xsd:element name="yearlyIncome" type="xsd:long" />
+				<xsd:element name="cibilScore" type="xsd:int" />
+				<xsd:element name="employmentMode" type="xsd:string" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="Acknowledgement">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="isEligible" type="xsd:boolean" />
+				<xsd:element name="approvedAmount" type="xsd:long" />
+				<xsd:element name="CriteriaMismatch" type="xsd:string"
+					maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
