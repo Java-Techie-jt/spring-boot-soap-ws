@@ -12,7 +12,7 @@
 	<groupId>com.javatechie</groupId>
 	<artifactId>spring-boot-sopa-ws</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-sopa-ws</name>
+	<name>spring-boot-soap-ws</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
